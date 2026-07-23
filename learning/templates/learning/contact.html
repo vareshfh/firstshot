@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تماس با ما | آموزشگاه برتر</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-base-100 font-sans min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <div class="navbar bg-base-200 shadow-lg">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl font-bold">آموزشگاه برتر</a>
+    </div>
+    <div class="flex-none gap-2">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#">خانه</a></li>
+        <li><a>دوره‌ها</a></li>
+        <li><a>درباره ما</a></li>
+        <li class="active"><a>تماس با ما</a></li>
+      </ul>
+      <button class="btn btn-primary">ورود / ثبت‌نام</button>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <main class="flex-1 flex justify-center items-center py-12">
+    <div class="card w-full max-w-2xl bg-base-100 shadow-xl">
+      <div class="card-body">
+        <h2 class="card-title text-2xl mb-6 justify-center text-primary">تماس با ما</h2>
+        <form>
+          <div class="form-control mb-4">
+            <label class="label" for="name">
+              <span class="label-text">نام و نام خانوادگی</span>
+            </label>
+            <input id="name" type="text" placeholder="نام شما" class="input input-bordered input-primary w-full" />
+          </div>
+          <div class="form-control mb-4">
+            <label class="label" for="email">
+              <span class="label-text">ایمیل</span>
+            </label>
+            <input id="email" type="email" placeholder="ایمیل شما" class="input input-bordered input-primary w-full" />
+          </div>
+          <div class="form-control mb-4">
+            <label class="label" for="message">
+              <span class="label-text">پیام شما</span>
+            </label>
+            <textarea id="message" rows="5" placeholder="متن پیام" class="textarea textarea-bordered textarea-primary w-full"></textarea>
+          </div>
+          <div class="form-control mt-6">
+            <button type="submit" class="btn btn-accent w-full text-lg">ارسال پیام</button>
+          </div>
+        </form>
+        <div class="divider">یا</div>
+        <div class="flex flex-col gap-2 text-base-content/80">
+          <div>
+            <strong>ایمیل:</strong> info@bartaracademy.ir
+          </div>
+          <div>
+            <strong>تلفن:</strong> ۰۲۱-۱۲۳۴۵۶۷۸
+          </div>
+          <div>
+            <strong>آدرس:</strong> تهران، خیابان مثال، پلاک ۱۰۰
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-4 bg-base-200 text-base-content">
+    <aside>
+      <p>© 1403 آموزشگاه برتر. تمامی حقوق محفوظ است.</p>
+    </aside>
+  </footer>
+</body>
+</html>

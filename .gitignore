@@ -1,1 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+.Python
 .venv/
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+pip-wheel-metadata/
+share/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Django
+db.sqlite3
+*.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.env
+.env.*
+
+# VSCode and IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test, coverage and temp files
+.coverage
+.tox/
+htmlcov/
+*.log
+*.tmp
+*.bak
+
+# Misc
+*.swp
+*~
+# End of Selection
+```

@@ -1,0 +1,119 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>صفحه اصلی سایت آموزشی</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-base-100 font-sans min-h-screen">
+  <!-- Navbar -->
+  <div class="navbar bg-base-200 shadow-lg">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl font-bold">آموزشگاه برتر</a>
+    </div>
+    <div class="flex-none gap-2">
+      <ul class="menu menu-horizontal px-1">
+        <li><a>خانه</a></li>
+        <li><a>دوره‌ها</a></li>
+        <li><a>درباره ما</a></li>
+        <li><a>تماس با ما</a></li>
+      </ul>
+      <button class="btn btn-primary">ورود / ثبت‌نام</button>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero min-h-[50vh] bg-gradient-to-tr from-primary to-secondary mt-4 rounded-xl mx-4 flex items-center justify-center">
+    <div class="hero-content flex-col lg:flex-row-reverse gap-12 text-center">
+      <!-- جایگزینی عکس با SVG معنادار آموزش آنلاین -->
+      <div class="max-w-xs rounded-lg shadow-2xl bg-white flex items-center justify-center p-5">
+        <svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="20" width="84" height="56" rx="8" fill="#4f46e5"/>
+          <rect x="16" y="32" width="64" height="32" rx="4" fill="#fff"/>
+          <path d="M56 48L44 56V40L56 48Z" fill="#4f46e5"/>
+          <circle cx="24" cy="76" r="8" fill="#38bdf8"/>
+          <rect x="64" y="70" width="16" height="8" rx="2" fill="#a21caf"/>
+        </svg>
+      </div>
+      <div>
+        <h1 class="text-4xl font-bold text-base-content mb-6">یادگیری آسان و سریع با <span class="text-primary">آموزشگاه برتر</span></h1>
+        <p class="mb-8 text-base-content/80">دوره‌های آنلاین با مدرسان حرفه‌ای، منابع آموزشی متنوع و پشتیبانی دائمی برای موفقیت شما در مسیر یادگیری</p>
+        <a class="btn btn-accent text-lg px-8" href="#">شروع یادگیری</a>
+      </div>
+    </div>
+  </section>
+  <!-- Courses Section -->
+  <section class="mx-4 my-16">
+    <h2 class="text-2xl font-bold text-center mb-8">محبوب‌ترین دوره‌ها</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Example Course Card 1 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <!-- SVG برای پایتون -->
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="15" y="10" width="50" height="32" rx="10" fill="#366994"/>
+            <rect x="15" y="38" width="50" height="32" rx="10" fill="#FFD43B"/>
+            <circle cx="29" cy="26" r="4" fill="#fff"/>
+            <circle cx="51" cy="54" r="4" fill="#fff"/>
+            <rect x="32" y="8" width="16" height="8" rx="4" fill="#60a5fa"/>
+            <rect x="32" y="64" width="16" height="8" rx="4" fill="#fbbf24"/>
+          </svg>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">آموزش پایتون</h3>
+          <p>از مبتدی تا پیشرفته، مناسب ورود به بازار کار برنامه‌نویسی</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">جزئیات بیشتر</button>
+          </div>
+        </div>
+      </div>
+      <!-- Example Course Card 2 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <!-- SVG برای جاوااسکریپت -->
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="60" height="60" rx="12" fill="#f7df1e"/>
+            <rect x="17" y="63" width="13" height="4" rx="2" fill="#323330"/>
+            <rect x="50" y="63" width="13" height="4" rx="2" fill="#323330"/>
+            <text x="28" y="54" font-size="32" fill="#323330" font-family="Arial" font-weight="bold">JS</text>
+          </svg>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">آموزش جاوااسکریپت</h3>
+          <p>آشنایی با مفاهیم اولیه تا ساخت اپلیکیشن‌‌های وب</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">جزئیات بیشتر</button>
+          </div>
+        </div>
+      </div>
+      <!-- Example Course Card 3 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure>
+          <!-- SVG برای پایگاه داده -->
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="40" cy="18" rx="26" ry="10" fill="#4ade80"/>
+            <rect x="14" y="18" width="52" height="36" rx="20" fill="#22d3ee"/>
+            <ellipse cx="40" cy="54" rx="26" ry="10" fill="#2dd4bf"/>
+            <ellipse cx="40" cy="36" rx="26" ry="10" fill="#6ee7b7" opacity="0.9"/>
+            <ellipse cx="40" cy="18" rx="26" ry="10" fill="#2dd4bf" opacity="0.6"/>
+          </svg>
+        </figure>
+        <div class="card-body items-center text-center">
+          <h3 class="card-title">آموزش پایگاه داده</h3>
+          <p>مفاهیم دیتابیس، SQL و مدل‌سازی داده‌ها</p>
+          <div class="card-actions">
+            <button class="btn btn-primary">جزئیات بیشتر</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer footer-center p-4 bg-base-200 text-base-content">
+    <aside>
+      <p>© 1403 آموزشگاه برتر. تمامی حقوق محفوظ است.</p>
+    </aside>
+  </footer>
+</body>
+</html>

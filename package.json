@@ -1,0 +1,29 @@
+{
+  "name": "firstshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "vite",
+    "build" : "vite build",
+    "start" : "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vareshfh/firstshot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vareshfh/firstshot/issues"
+  },
+  "homepage": "https://github.com/vareshfh/firstshot#readme",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "daisyui": "^5.7.0",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.1.5"
+  }
+}

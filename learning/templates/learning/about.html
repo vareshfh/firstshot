@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>درباره ما | آموزشگاه برتر</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="bg-base-100 font-sans min-h-screen flex flex-col">
+  <!-- Navbar -->
+  <div class="navbar bg-base-200 shadow-lg">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl font-bold">آموزشگاه برتر</a>
+    </div>
+    <div class="flex-none gap-2">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="#">خانه</a></li>
+        <li><a>دوره‌ها</a></li>
+        <li class="active"><a>درباره ما</a></li>
+        <li><a>تماس با ما</a></li>
+      </ul>
+      <button class="btn btn-primary">ورود / ثبت‌نام</button>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <main class="flex-1 flex flex-col items-center justify-center py-16 px-4">
+    <div class="card w-full max-w-3xl bg-base-100 shadow-xl">
+      <div class="card-body">
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+          <div class="flex items-center justify-center">
+            <!-- SVG معنای آموزش و تیم -->
+            <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60" cy="60" rx="55" ry="53" fill="#38bdf8" opacity="0.13"/>
+              <rect x="28" y="48" width="64" height="32" rx="10" fill="#4f46e5"/>
+              <rect x="38" y="32" width="44" height="28" rx="8" fill="#fff"/>
+              <circle cx="60" cy="40" r="8" fill="#a21caf"/>
+              <rect x="50" y="62" width="20" height="6" rx="3" fill="#fde68a"/>
+              <ellipse cx="40" cy="80" rx="10" ry="6" fill="#fbbf24"/>
+              <ellipse cx="80" cy="80" rx="10" ry="6" fill="#fbbf24"/>
+              <circle cx="42" cy="70" r="6" fill="#0ea5e9"/>
+              <circle cx="78" cy="68" r="6" fill="#0ea5e9"/>
+            </svg>
+          </div>
+          <div class="flex-1">
+            <h1 class="text-3xl font-bold text-primary mb-6 text-center lg:text-right">درباره آموزشگاه برتر</h1>
+            <p class="text-lg text-base-content/80 leading-relaxed mb-4 text-center lg:text-right">
+              آموزشگاه برتر با هدف ارائه بهترین تجربه یادگیری آنلاین، فعالیت خود را با جمعی از مدرسان باتجربه و حرفه‌ای آغاز کرد. ما با استفاده از به‌روزترین متدهای آموزشی، سعی داریم مسیر یادگیری را برای همه آسان، جذاب و کارآمد کنیم.
+            </p>
+            <p class="text-base-content/70 mb-2 text-center lg:text-right">
+              <strong>امکانات آموزشگاه برتر:</strong>
+            </p>
+            <ul class="list-disc pr-6 mb-4 text-base-content/80 text-right">
+              <li>ارائه دوره‌های متنوع در زمینه‌های برنامه‌نویسی، فناوری و مهارت‌های کاربردی</li>
+              <li>دسترسی به منابع آموزشی و تمرینات آنلاین</li>
+              <li>پشتیبانی دائمی و ارتباط مستقیم با مدرسین</li>
+              <li>صدور گواهینامه معتبر برای فارغ‌التحصیلان</li>
+            </ul>
+            <div class="alert alert-success flex justify-center py-2 mt-6">
+              <span>با آموزشگاه برتر، آینده موفق تحصیلی و شغلی خود را بسازید!</span>
+            </div>
+          </div>
+        </div>
+        <!-- Team Section -->
+        <div class="mt-12">
+          <h2 class="text-2xl font-bold mb-6 text-primary text-center">مدرسان ما</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-evenly">
+            <!-- Teacher 1 -->
+            <div class="card bg-base-200 border shadow-md">
+              <div class="avatar flex justify-center pt-4">
+                <div class="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 bg-white">
+                  <img src="{% static 'img/teacher1.png' %}" alt="مدرس ۱" />
+                </div>
+              </div>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title">محمد رضایی</h3>
+                <p class="text-base-content/70">مدرس پایتون و الگوریتم</p>
+              </div>
+            </div>
+            <!-- Teacher 2 -->
+            <div class="card bg-base-200 border shadow-md">
+              <div class="avatar flex justify-center pt-4">
+                <div class="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 bg-white">
+                  <img src="{% static 'img/teacher2.png' %}" alt="مدرس ۲" />
+                </div>
+              </div>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title">سارا محمدی</h3>
+                <p class="text-base-content/70">مدرس جاوااسکریپت و طراحی وب</p>
+              </div>
+            </div>
+            <!-- Teacher 3 -->
+            <div class="card bg-base-200 border shadow-md">
+              <div class="avatar flex justify-center pt-4">
+                <div class="w-20 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 bg-white">
+                  <img src="{% static 'img/teacher3.png' %}" alt="مدرس ۳" />
+                </div>
+              </div>
+              <div class="card-body items-center text-center">
+                <h3 class="card-title">حمید حسینی</h3>
+                <p class="text-base-content/70">مدرس پایگاه داده و SQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-4 bg-base-200 text-base-content">
+    <aside>
+      <p>© 1403 آموزشگاه برتر. تمامی حقوق محفوظ است.</p>
+    </aside>
+  </footer>
+</body>
+</html>
